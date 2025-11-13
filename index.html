@@ -43,7 +43,7 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#survey">Survey</a>
+            <a class="nav-link js-scroll-trigger" href="#problem">Problem</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#painpoints">Pain Points</a>
@@ -55,9 +55,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#features">Featured Solution</a>
           </li>                                
-         <--<li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#design">Design</a>
-          </li>  --/>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#canvas">Lean Canvas</a>
           </li>
@@ -79,7 +79,7 @@
           </h1>
           <div class="subheading mb-5">RGM Section 31  · Genesys Cloud
           </div>
-          <p class="lead mb-5">Work smart with lorem ispum QA</p>
+          <p class="lead mb-5">Generate, review, execute — faster QA with better accuracy & lower cost.</p>
           <div class="social-icons">
             <a href="https://www.linkedin.com/in/ronnel-cuizon-4834418a/" target="_blank">
               <i class="fab fa-linkedin"></i>
@@ -96,16 +96,16 @@
 
       <hr class="m-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="survey">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="problem">
         <div class="my-auto">
           <h2 class="mb-5">Survey Results</h2>
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Survey 1</h3>
                 <div style="text-align:left">
-                  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRApO5lrd1pk9WePfwZ3EwaPATYQ9U0laJ-Uq-8xQiixnl7_uZXqc7tBXlm6Tu6l92Hxj5P7uxrJ5FJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    <br><br><br>
-              <h3 class="mb-0">Survey 2</h3>              
-                  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQqUtKOvbU1SYsC5IJqFEY7Z4l-rAOI34epD9LJhFO_dT4miquE5kFd8A_qU8mYNFBA9-bJ5IdLBXZZ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                  <p class="lead mb-5">QA teams spend too much time writing/maintaining test cases — not analyzing results.</p>
+                  <p class="lead mb-5">Automation can be brittle: flaky tests and coverage gaps slow releases.</p>
+                  <p class="lead mb-5">Data accuracy suffers without human oversight for edge cases.</p>
+                  <p class="lead mb-5">Enterprise tools (e.g., Cyara) are powerful but costly for every workflow.</p>
                 </div>      
               </div>
         </div>
@@ -167,6 +167,10 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">QA Resource</h3>
+              <p class="lead mb-5">Upload a test case → PS QA Agent drafts detailed test scenarios.</p>
+              <p class="lead mb-5">Human‑in‑the‑loop review ensures accuracy and covers edge cases.</p>
+              <p class="lead mb-5">One‑click execution; results and logs are auto‑collected.</p>
+              <p class="lead mb-5">Value: faster cycles, higher coverage, consistent documentation, and lower cost vs. pure Cyara usage.</p>
                <ul>
                 <li>Feature 1</li>
                 <li>Feature 2</li>
@@ -203,51 +207,175 @@
 
 
       <hr class="m-0">
-<!--div 
+
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="design">
         <div class="my-auto">
           <h2 class="mb-5">How it works</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Flowchart</h3>
+              <h3 class="mb-0">Workflow</h3>
               <div class="subheading mb-3"></div>
                 <div style="text-align:left">
-                  <iframe src="https://drive.google.com/file/d/1YzUBPpIu0S6taHCrDm4xTVhoUsy0gmdR/preview" width="640" height="480"></iframe>      
-                </div>              
+                              <style>
+                                :root{
+                                  --accent: #366AC2;
+                                  --box-bg: #E8F0FE;
+                                  --text: #0b0f1a;
+                                  --radius: 18px;
+                                  --gap: clamp(10px, 2vw, 18px);
+                                  --padY: clamp(14px, 2.2vw, 18px);
+                                  --padX: clamp(16px, 3vw, 24px);
+                                  --shadow: 0 1px 3px rgba(0,0,0,.06), 0 6px 12px rgba(0,0,0,.04);
+                                }
 
+                                body{
+                                  margin:0;
+                                  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+                                  color: var(--text);
+                                  background:#fff;
+                                }
+
+                                .wrapper{
+                                  max-width: 1200px;
+                                  margin: 24px auto;
+                                  padding: 0 16px;
+                                }
+
+                                .flow{
+                                  display:flex;
+                                  align-items:center;
+                                  gap: var(--gap);
+                                  overflow-x:auto;
+                                  padding-bottom: 8px; /* small space for scrollbar if needed */
+                                  scrollbar-width: thin;
+                                }
+
+                                .step{
+                                  flex: 0 0 auto;
+                                  min-width: clamp(180px, 26vw, 240px);
+                                  background: var(--box-bg);
+                                  border: 2px solid var(--accent);
+                                  border-radius: var(--radius);
+                                  box-shadow: var(--shadow);
+                                  padding: var(--padY) var(--padX);
+                                  display:flex;
+                                  align-items:center;
+                                  justify-content:center;
+                                  text-align:center;
+                                  line-height:1.15;
+                                }
+
+                                .kicker{
+                                  display:block;
+                                  font-size: clamp(12px, 1.6vw, 16px);
+                                  opacity:.85;
+                                }
+
+                                .headline{
+                                  display:block;
+                                  font-weight: 700;
+                                  font-size: clamp(16px, 2.4vw, 24px);
+                                  letter-spacing:.2px;
+                                  margin-top: 2px;
+                                }
+
+                                .arrow{
+                                  flex: 0 0 auto;
+                                  display:flex;
+                                  align-items:center;
+                                  justify-content:center;
+                                  width: clamp(20px, 3.5vw, 36px);
+                                  height: clamp(20px, 3.5vw, 36px);
+                                }
+
+                                .arrow svg{
+                                  width: 100%;
+                                  height: 100%;
+                                  display:block;
+                                  fill: var(--accent);
+                                }
+
+                                /* High-contrast users still get clear outlines */
+                                @media (prefers-contrast: more){
+                                  .step{ outline: 3px solid var(--accent); outline-offset: 2px; }
+                                }
+                              </style>
+
+                            <main class="wrapper" aria-label="PS QA Agent process flow">
+                              <section class="flow" role="list">
+                                <article class="step" role="listitem" aria-label="Upload Test Case">
+                                  <span>
+                                    <span class="kicker">Upload</span>
+                                    <span class="headline">Test Case</span>
+                                  </span>
+                                </article>
+
+                                <div class="arrow" aria-hidden="true">
+                                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                    <path d="M4 12h14l-4-4 1.4-1.4L22 12l-6.6 5.4L14 16l4-4H4z"></path>
+                                  </svg>
+                                </div>
+
+                                <article class="step" role="listitem" aria-label="Agent Generates">
+                                  <span>
+                                    <span class="kicker">Agent</span>
+                                    <span class="headline">Generates</span>
+                                  </span>
+                                </article>
+
+                                <div class="arrow" aria-hidden="true">
+                                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                    <path d="M4 12h14l-4-4 1.4-1.4L22 12l-6.6 5.4L14 16l4-4H4z"></path>
+                                  </svg>
+                                </div>
+
+                                <article class="step" role="listitem" aria-label="Human Review">
+                                  <span>
+                                    <span class="kicker">Human</span>
+                                    <span class="headline">Review</span>
+                                  </span>
+                                </article>
+
+                                <div class="arrow" aria-hidden="true">
+                                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                    <path d="M4 12h14l-4-4 1.4-1.4L22 12l-6.6 5.4L14 16l4-4H4z"></path>
+                                  </svg>
+                                </div>
+
+                                <article class="step" role="listitem" aria-label="AI Agent Executes">
+                                  <span>
+                                    <span class="kicker">AI Agent</span>
+                                    <span class="headline">Executes</span>
+                                  </span>
+                                </article>
+
+                                <div class="arrow" aria-hidden="true">
+                                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                    <path d="M4 12h14l-4-4 1.4-1.4L22 12l-6.6 5.4L14 16l4-4H4z"></path>
+                                  </svg>
+                                </div>
+
+                                <article class="step" role="listitem" aria-label="Logs and Reports">
+                                  <span>
+                                    <span class="kicker">Logs &amp;</span>
+                                    <span class="headline">Reports</span>
+                                  </span>
+                                </article>
+                              </section>
+                            </main>
+                </div>              
             </div>
           </div>
 
-          class="resume-item d-flex flex-column flex-md-row mb-5">
+          <!--div class="resume-item d-flex flex-column flex-md-row mb-5"></div-->
           <div class="resume-item d-flex flex-column flex-md-row"> </div>
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Mockup design</h3>
-              <div class="subheading mb-3">Mobile user view:</div>
-                <div style="text-align:left">
-                  <div class="canva-embed" data-design-id="DADwrhkNLNw" data-height-ratio="0.7500" style="padding:75.0000% 5px 5px 5px;background:rgba(0,0,0,0.03);border-radius:8px;"></div>
-                  <script async src="https:&#x2F;&#x2F;sdk.canva.com&#x2F;v1&#x2F;embed.js"></script>
-                    <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DADwrhkNLNw&#x2F;view?utm_content=DADwrhkNLNw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Mock-up Design User View</a> by <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;mfrigillana?utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Marion Frigillana</a>
-                    <br><br><br>
-                  <div class="canva-embed" data-design-id="DADwrqr-loU" data-height-ratio="0.7500" style="padding:75.0000% 5px 5px 5px;background:rgba(0,0,0,0.03);border-radius:8px;" ></div>
-                  <script async src="https:&#x2F;&#x2F;sdk.canva.com&#x2F;v1&#x2F;embed.js"></script>
-                    <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DADwrqr-loU&#x2F;view?utm_content=DADwrqr-loU&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Mock-up Design Marketer View</a> by <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;mfrigillana?utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Marion Frigillana</a>
-                </div>      
-              </div>
         </div>
       </section>
-</div-->
+
       <hr class="m-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="canvas">
-        <div class="my-auto">
-          <h2 class="mb-5">Lean Canvas</h2>
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0"></h3>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQj2IaMvYapg1736UNuouMtUB4t16lRCzqvVbtuiHrlBklXInktnm6FwSJROA2FXWLIDeOnVLe9VL8M/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-            </div>
-        </div>
-      </section>
+ 
 
       <hr class="m-0">
 
